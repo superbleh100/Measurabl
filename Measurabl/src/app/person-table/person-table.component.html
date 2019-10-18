@@ -1,0 +1,14 @@
+<div class="table-container" role="table">
+    <div class="flex-table header" role="rowgroup">
+        <div class="flex-row first" role="columnheader">Id</div>
+        <div class="flex-row" role="columnheader">First Name</div>
+        <div class="flex-row" role="columnheader">Last Name</div>
+        <div class="flex-row" role="columnheader">Age</div>
+    </div>
+    <div *ngFor="let person of people" class="flex-table row" role="rowgroup">
+        <div class="flex-row first" role="cell">{{person.id}}</div>
+        <div class="flex-row" role="cell">{{person.firstName}}</div>
+        <div class="flex-row" role="cell">{{person.lastName}}</div>
+        <div class="flex-row" role="cell">{{person.age}}</div>
+    </div>
+</div>
